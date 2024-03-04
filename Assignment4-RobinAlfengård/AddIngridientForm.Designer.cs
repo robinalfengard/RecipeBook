@@ -36,6 +36,8 @@
             IngridientInput = new TextBox();
             NumberOfIngridientsLabel = new Label();
             IngridientCounterLabel = new Label();
+            OkButton = new Button();
+            CancelButton = new Button();
             IngridientsBoxForm2.SuspendLayout();
             SuspendLayout();
             // 
@@ -62,6 +64,7 @@
             EditIngridientButton.TabIndex = 10;
             EditIngridientButton.Text = "Edit";
             EditIngridientButton.UseVisualStyleBackColor = false;
+            EditIngridientButton.Click += EditIngridient;
             // 
             // DeleteIngridientButton
             // 
@@ -72,6 +75,7 @@
             DeleteIngridientButton.TabIndex = 9;
             DeleteIngridientButton.Text = "Delete";
             DeleteIngridientButton.UseVisualStyleBackColor = false;
+            DeleteIngridientButton.Click += DeleteIngridient;
             // 
             // AddIngridientButton
             // 
@@ -82,14 +86,17 @@
             AddIngridientButton.TabIndex = 8;
             AddIngridientButton.Text = "Add";
             AddIngridientButton.UseVisualStyleBackColor = false;
+            AddIngridientButton.Click += AddIngridient;
             // 
             // ListOfIngridientsForm2
             // 
             ListOfIngridientsForm2.Location = new Point(17, 91);
+            ListOfIngridientsForm2.MultiSelect = false;
             ListOfIngridientsForm2.Name = "ListOfIngridientsForm2";
             ListOfIngridientsForm2.Size = new Size(547, 529);
             ListOfIngridientsForm2.TabIndex = 2;
             ListOfIngridientsForm2.UseCompatibleStateImageBehavior = false;
+            ListOfIngridientsForm2.View = View.List;
             // 
             // IngridientInput
             // 
@@ -116,11 +123,35 @@
             IngridientCounterLabel.Size = new Size(0, 25);
             IngridientCounterLabel.TabIndex = 2;
             // 
+            // OkButton
+            // 
+            OkButton.BackColor = SystemColors.ControlLight;
+            OkButton.Location = new Point(82, 762);
+            OkButton.Name = "OkButton";
+            OkButton.Size = new Size(167, 34);
+            OkButton.TabIndex = 11;
+            OkButton.Text = "OK";
+            OkButton.UseVisualStyleBackColor = false;
+            OkButton.Click += AcceptIngridientListing;
+            // 
+            // CancelButton
+            // 
+            CancelButton.BackColor = SystemColors.ControlLight;
+            CancelButton.Location = new Point(397, 762);
+            CancelButton.Name = "CancelButton";
+            CancelButton.Size = new Size(167, 34);
+            CancelButton.TabIndex = 11;
+            CancelButton.Text = "Cancel";
+            CancelButton.UseVisualStyleBackColor = false;
+            CancelButton.Click += CancelIngridientListing;
+            // 
             // AddIngridientsForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(794, 786);
+            ClientSize = new Size(824, 838);
+            Controls.Add(CancelButton);
+            Controls.Add(OkButton);
             Controls.Add(IngridientCounterLabel);
             Controls.Add(NumberOfIngridientsLabel);
             Controls.Add(IngridientsBoxForm2);
@@ -144,5 +175,7 @@
         private Button AddIngridientButton;
         private Label NumberOfIngridientsLabel;
         private Label IngridientCounterLabel;
+        private Button OkButton;
+        private Button CancelButton;
     }
 }

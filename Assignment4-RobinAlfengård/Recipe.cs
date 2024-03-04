@@ -11,9 +11,9 @@ namespace Assignment4_RobinAlfengård
         private string nameOfIngridient {  get; set; }
         private string instructions {  get; set; }  
         private Category category { get; set; }
-        List<Ingridient> ingridients { get; set; }
+        List<String> ingridients { get; set; }
 
-        public Recipe(string nameOfIngridient, string instructions, Category category, List<Ingridient> ingridients)
+        public Recipe(string nameOfIngridient, string instructions, Category category, List<String> ingridients)
         {
             this.nameOfIngridient = nameOfIngridient;
             this.instructions = instructions;

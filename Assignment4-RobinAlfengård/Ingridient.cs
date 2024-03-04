@@ -8,13 +8,12 @@ namespace Assignment4_RobinAlfengård
 {
     internal class Ingridient
     {
-        private string nameOfIngridient {  get; set; }
-        private int ammount { get; set; }
+        private List<string> nameOfIngridient {  get; set; }
+      
 
-        public Ingridient(string nameOfIngridient, int ammount)
+        public Ingridient(List<string> nameOfIngridient)
         {
-            this.nameOfIngridient = nameOfIngridient;
-            this.ammount = ammount;
+            this.nameOfIngridient = nameOfIngridient;    
         }
     }
 
