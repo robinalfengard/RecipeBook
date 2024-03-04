@@ -1,0 +1,17 @@
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\bin\Debug\net8.0-windows\Assignment4-RobinAlfengård.exe
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\bin\Debug\net8.0-windows\Assignment4-RobinAlfengård.deps.json
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\bin\Debug\net8.0-windows\Assignment4-RobinAlfengård.runtimeconfig.json
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\bin\Debug\net8.0-windows\Assignment4-RobinAlfengård.dll
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\bin\Debug\net8.0-windows\Assignment4-RobinAlfengård.pdb
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4_RobinAlfengård.RecipeBookWindow.resources
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.csproj.GenerateResource.cache
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.AssemblyInfoInputs.cache
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.AssemblyInfo.cs
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.csproj.CoreCompileInputs.cache
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.sourcelink.json
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.dll
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\refint\Assignment4-RobinAlfengård.dll
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.pdb
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\Assignment4-RobinAlfengård.genruntimeconfig.cache
+C:\C#\Malmö Universitet\Assignment4-RobinAlfengård\Assignment4-RobinAlfengård\obj\Debug\net8.0-windows\ref\Assignment4-RobinAlfengård.dll
