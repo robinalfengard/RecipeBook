@@ -7,6 +7,9 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+    
+        
+
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
@@ -29,13 +32,13 @@
         private void InitializeComponent()
         {
             LeftBigBox = new GroupBox();
+            AddRecipeButton = new Button();
+            InstructionsInput = new TextBox();
             AddIngridientButton = new Button();
             CategorySelection = new ComboBox();
             CategoryLabel = new Label();
             NameOfRecipeInput = new TextBox();
             NameOfRecipeLabel = new Label();
-            InstructionsInput = new TextBox();
-            AddRecipeButton = new Button();
             ListOfRecipies = new ListView();
             LabelNameOfRecipe = new Label();
             label2 = new Label();
@@ -44,11 +47,13 @@
             EditFinishButton = new Button();
             DeleteButton = new Button();
             ClearSelectionButton = new Button();
+            InstructionsLabel = new Label();
             LeftBigBox.SuspendLayout();
             SuspendLayout();
             // 
             // LeftBigBox
             // 
+            LeftBigBox.Controls.Add(InstructionsLabel);
             LeftBigBox.Controls.Add(AddRecipeButton);
             LeftBigBox.Controls.Add(InstructionsInput);
             LeftBigBox.Controls.Add(AddIngridientButton);
@@ -63,6 +68,25 @@
             LeftBigBox.TabStop = false;
             LeftBigBox.Text = "Add New Recipe";
             // 
+            // AddRecipeButton
+            // 
+            AddRecipeButton.BackColor = SystemColors.ControlLight;
+            AddRecipeButton.Location = new Point(132, 723);
+            AddRecipeButton.Name = "AddRecipeButton";
+            AddRecipeButton.Size = new Size(303, 57);
+            AddRecipeButton.TabIndex = 6;
+            AddRecipeButton.Text = "Add Recipe";
+            AddRecipeButton.UseVisualStyleBackColor = false;
+            // 
+            // InstructionsInput
+            // 
+            InstructionsInput.BorderStyle = BorderStyle.FixedSingle;
+            InstructionsInput.Location = new Point(33, 202);
+            InstructionsInput.Multiline = true;
+            InstructionsInput.Name = "InstructionsInput";
+            InstructionsInput.Size = new Size(519, 474);
+            InstructionsInput.TabIndex = 5;
+            // 
             // AddIngridientButton
             // 
             AddIngridientButton.BackColor = SystemColors.ControlLight;
@@ -75,6 +99,7 @@
             // 
             // CategorySelection
             // 
+            CategorySelection.DropDownStyle = ComboBoxStyle.DropDownList;
             CategorySelection.FormattingEnabled = true;
             CategorySelection.Location = new Point(192, 123);
             CategorySelection.Name = "CategorySelection";
@@ -106,25 +131,6 @@
             NameOfRecipeLabel.Size = new Size(137, 25);
             NameOfRecipeLabel.TabIndex = 0;
             NameOfRecipeLabel.Text = "Name of Recipe";
-            // 
-            // InstructionsInput
-            // 
-            InstructionsInput.BorderStyle = BorderStyle.FixedSingle;
-            InstructionsInput.Location = new Point(33, 202);
-            InstructionsInput.Multiline = true;
-            InstructionsInput.Name = "InstructionsInput";
-            InstructionsInput.Size = new Size(519, 474);
-            InstructionsInput.TabIndex = 5;
-            // 
-            // AddRecipeButton
-            // 
-            AddRecipeButton.BackColor = SystemColors.ControlLight;
-            AddRecipeButton.Location = new Point(132, 723);
-            AddRecipeButton.Name = "AddRecipeButton";
-            AddRecipeButton.Size = new Size(303, 57);
-            AddRecipeButton.TabIndex = 6;
-            AddRecipeButton.Text = "Add Recipe";
-            AddRecipeButton.UseVisualStyleBackColor = false;
             // 
             // ListOfRecipies
             // 
@@ -201,6 +207,15 @@
             ClearSelectionButton.Text = "Clear Selection";
             ClearSelectionButton.UseVisualStyleBackColor = false;
             // 
+            // InstructionsLabel
+            // 
+            InstructionsLabel.AutoSize = true;
+            InstructionsLabel.Location = new Point(33, 174);
+            InstructionsLabel.Name = "InstructionsLabel";
+            InstructionsLabel.Size = new Size(104, 25);
+            InstructionsLabel.TabIndex = 7;
+            InstructionsLabel.Text = "Instructions";
+            // 
             // RecipeBookWindow
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -242,5 +257,6 @@
         private Button EditFinishButton;
         private Button DeleteButton;
         private Button ClearSelectionButton;
+        private Label InstructionsLabel;
     }
 }

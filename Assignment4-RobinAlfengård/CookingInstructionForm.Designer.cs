@@ -19,6 +19,10 @@
             }
             base.Dispose(disposing);
         }
+        private void CookingInstructionForm_Load(object sender, EventArgs e)
+        {
+            // Your code for form load event handling goes here
+        }
 
         #region Windows Form Designer generated code
 
