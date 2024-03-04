@@ -32,6 +32,7 @@
         private void InitializeComponent()
         {
             LeftBigBox = new GroupBox();
+            InstructionsLabel = new Label();
             AddRecipeButton = new Button();
             InstructionsInput = new TextBox();
             AddIngridientButton = new Button();
@@ -47,7 +48,6 @@
             EditFinishButton = new Button();
             DeleteButton = new Button();
             ClearSelectionButton = new Button();
-            InstructionsLabel = new Label();
             LeftBigBox.SuspendLayout();
             SuspendLayout();
             // 
@@ -68,6 +68,15 @@
             LeftBigBox.TabStop = false;
             LeftBigBox.Text = "Add New Recipe";
             // 
+            // InstructionsLabel
+            // 
+            InstructionsLabel.AutoSize = true;
+            InstructionsLabel.Location = new Point(33, 174);
+            InstructionsLabel.Name = "InstructionsLabel";
+            InstructionsLabel.Size = new Size(104, 25);
+            InstructionsLabel.TabIndex = 7;
+            InstructionsLabel.Text = "Instructions";
+            // 
             // AddRecipeButton
             // 
             AddRecipeButton.BackColor = SystemColors.ControlLight;
@@ -77,6 +86,7 @@
             AddRecipeButton.TabIndex = 6;
             AddRecipeButton.Text = "Add Recipe";
             AddRecipeButton.UseVisualStyleBackColor = false;
+            AddRecipeButton.Click += AddRecipeOnClick;
             // 
             // InstructionsInput
             // 
@@ -96,6 +106,7 @@
             AddIngridientButton.TabIndex = 4;
             AddIngridientButton.Text = "Add Ingridients";
             AddIngridientButton.UseVisualStyleBackColor = false;
+            AddIngridientButton.Click += AddIngridientsClick;
             // 
             // CategorySelection
             // 
@@ -207,15 +218,6 @@
             ClearSelectionButton.Text = "Clear Selection";
             ClearSelectionButton.UseVisualStyleBackColor = false;
             // 
-            // InstructionsLabel
-            // 
-            InstructionsLabel.AutoSize = true;
-            InstructionsLabel.Location = new Point(33, 174);
-            InstructionsLabel.Name = "InstructionsLabel";
-            InstructionsLabel.Size = new Size(104, 25);
-            InstructionsLabel.TabIndex = 7;
-            InstructionsLabel.Text = "Instructions";
-            // 
             // RecipeBookWindow
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -233,6 +235,7 @@
             Name = "RecipeBookWindow";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Recipe Book";
+            Load += RecipeBookWindow_Load;
             LeftBigBox.ResumeLayout(false);
             LeftBigBox.PerformLayout();
             ResumeLayout(false);
