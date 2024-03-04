@@ -5,11 +5,9 @@ namespace Assignment4_RobinAlfengård
         public RecipeBookWindow()
         {
             InitializeComponent();
+            CategorySelection.DataSource = Enum.GetValues(typeof(Category));
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             IngridientsBoxForm2 = new GroupBox();
-            IngridientInput = new TextBox();
-            ListOfIngridientsForm2 = new ListView();
-            AddIngridientButton = new Button();
-            DeleteIngridientButton = new Button();
             EditIngridientButton = new Button();
+            DeleteIngridientButton = new Button();
+            AddIngridientButton = new Button();
+            ListOfIngridientsForm2 = new ListView();
+            IngridientInput = new TextBox();
             NumberOfIngridientsLabel = new Label();
             IngridientCounterLabel = new Label();
             IngridientsBoxForm2.SuspendLayout();
@@ -53,31 +53,15 @@
             IngridientsBoxForm2.TabStop = false;
             IngridientsBoxForm2.Text = "Ingridient";
             // 
-            // IngridientInput
+            // EditIngridientButton
             // 
-            IngridientInput.BorderStyle = BorderStyle.FixedSingle;
-            IngridientInput.Location = new Point(17, 39);
-            IngridientInput.Name = "IngridientInput";
-            IngridientInput.Size = new Size(547, 31);
-            IngridientInput.TabIndex = 0;
-            // 
-            // ListOfIngridientsForm2
-            // 
-            ListOfIngridientsForm2.Location = new Point(17, 91);
-            ListOfIngridientsForm2.Name = "ListOfIngridientsForm2";
-            ListOfIngridientsForm2.Size = new Size(547, 529);
-            ListOfIngridientsForm2.TabIndex = 2;
-            ListOfIngridientsForm2.UseCompatibleStateImageBehavior = false;
-            // 
-            // AddIngridientButton
-            // 
-            AddIngridientButton.BackColor = SystemColors.ControlLight;
-            AddIngridientButton.Location = new Point(570, 91);
-            AddIngridientButton.Name = "AddIngridientButton";
-            AddIngridientButton.Size = new Size(167, 34);
-            AddIngridientButton.TabIndex = 8;
-            AddIngridientButton.Text = "Add";
-            AddIngridientButton.UseVisualStyleBackColor = false;
+            EditIngridientButton.BackColor = SystemColors.ControlLight;
+            EditIngridientButton.Location = new Point(570, 148);
+            EditIngridientButton.Name = "EditIngridientButton";
+            EditIngridientButton.Size = new Size(167, 34);
+            EditIngridientButton.TabIndex = 10;
+            EditIngridientButton.Text = "Edit";
+            EditIngridientButton.UseVisualStyleBackColor = false;
             // 
             // DeleteIngridientButton
             // 
@@ -89,15 +73,31 @@
             DeleteIngridientButton.Text = "Delete";
             DeleteIngridientButton.UseVisualStyleBackColor = false;
             // 
-            // EditIngridientButton
+            // AddIngridientButton
             // 
-            EditIngridientButton.BackColor = SystemColors.ControlLight;
-            EditIngridientButton.Location = new Point(570, 148);
-            EditIngridientButton.Name = "EditIngridientButton";
-            EditIngridientButton.Size = new Size(167, 34);
-            EditIngridientButton.TabIndex = 10;
-            EditIngridientButton.Text = "Edit";
-            EditIngridientButton.UseVisualStyleBackColor = false;
+            AddIngridientButton.BackColor = SystemColors.ControlLight;
+            AddIngridientButton.Location = new Point(570, 91);
+            AddIngridientButton.Name = "AddIngridientButton";
+            AddIngridientButton.Size = new Size(167, 34);
+            AddIngridientButton.TabIndex = 8;
+            AddIngridientButton.Text = "Add";
+            AddIngridientButton.UseVisualStyleBackColor = false;
+            // 
+            // ListOfIngridientsForm2
+            // 
+            ListOfIngridientsForm2.Location = new Point(17, 91);
+            ListOfIngridientsForm2.Name = "ListOfIngridientsForm2";
+            ListOfIngridientsForm2.Size = new Size(547, 529);
+            ListOfIngridientsForm2.TabIndex = 2;
+            ListOfIngridientsForm2.UseCompatibleStateImageBehavior = false;
+            // 
+            // IngridientInput
+            // 
+            IngridientInput.BorderStyle = BorderStyle.FixedSingle;
+            IngridientInput.Location = new Point(17, 39);
+            IngridientInput.Name = "IngridientInput";
+            IngridientInput.Size = new Size(547, 31);
+            IngridientInput.TabIndex = 0;
             // 
             // NumberOfIngridientsLabel
             // 
@@ -127,6 +127,7 @@
             Name = "AddIngridientsForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Ingridients";
+            Load += AddIngridientsForm_Load;
             IngridientsBoxForm2.ResumeLayout(false);
             IngridientsBoxForm2.PerformLayout();
             ResumeLayout(false);

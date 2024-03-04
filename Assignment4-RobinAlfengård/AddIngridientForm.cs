@@ -16,5 +16,10 @@ namespace Assignment4_RobinAlfengård
         {
             InitializeComponent();
         }
+
+        private void AddIngridientsForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
