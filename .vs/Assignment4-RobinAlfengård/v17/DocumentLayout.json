@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\addingridientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\addingridientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\addingridientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\addingridientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +11,8 @@
       "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\ingridient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\ingridient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|solutionrelative:assignment4-robinalfeng\u00E5rd\\recipemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F9F7B70-5B08-4247-9475-B0F0D602F866}|Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd.csproj|c:\\c#\\malm\u00F6 universitet\\assignment4-robinalfeng\u00E5rd\\assignment4-robinalfeng\u00E5rd\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,93 +26,55 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddIngridientForm.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs [Design]",
-              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T17:53:59.195Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddIngridientForm.cs",
-              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\AddIngridientForm.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAA5wEYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T17:38:32.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Category.cs",
-              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\Category.cs",
-              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Category.cs",
-              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T17:29:37.314Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
+              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
+              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
+              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T16:14:13.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecipeManager.cs",
+              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\RecipeManager.cs",
+              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\RecipeManager.cs",
+              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\RecipeManager.cs",
+              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\RecipeManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T15:19:26.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
               "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
               "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs [Design]",
               "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T17:24:38.577Z",
+              "WhenOpened": "2024-03-07T15:09:31.015Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ingridient.cs",
-              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Ingridient.cs",
-              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\Ingridient.cs",
-              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Ingridient.cs",
-              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\Ingridient.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T17:23:12.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Recipe.cs",
-              "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
-              "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
-              "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
-              "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\Recipe.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T15:13:01.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
               "RelativeDocumentMoniker": "Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
               "ToolTip": "C:\\C#\\Malm\u00F6 Universitet\\Assignment4-RobinAlfeng\u00E5rd\\Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
               "RelativeToolTip": "Assignment4-RobinAlfeng\u00E5rd\\MainForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAiwGIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T14:55:37.476Z",
               "EditorCaption": ""

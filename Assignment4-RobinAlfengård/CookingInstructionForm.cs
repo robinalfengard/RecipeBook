@@ -12,9 +12,16 @@ namespace Assignment4_RobinAlfengård
 {
     public partial class CookingInstructionForm : Form
     {
-        public CookingInstructionForm()
+        public CookingInstructionForm(Recipe recipe)
         {
             InitializeComponent();
+            CookingInstructionLabel.Text = recipe.Instructions;
+            IngridientsListerLabelForm3.Text = string.Join(", ", recipe.Ingridients);
+        }
+
+        private void OkButtonClick(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

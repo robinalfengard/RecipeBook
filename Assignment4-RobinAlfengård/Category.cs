@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment4_RobinAlfengård
 {
-    enum Category
+    public enum Category
     {
         Meat,
         Pizza,
