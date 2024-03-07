@@ -6,19 +6,44 @@ using System.Threading.Tasks;
 
 namespace Assignment4_RobinAlfengård
 {
-    internal class Recipe
+    public class Recipe
     {
-        private string nameOfIngridient {  get; set; }
-        private string instructions {  get; set; }  
-        private Category category { get; set; }
-        List<String> ingridients { get; set; }
+        private string nameOfRecipe;
+        private string instructions;
+        private Category category;
+        List<String> ingridients; 
 
-        public Recipe(string nameOfIngridient, string instructions, Category category, List<String> ingridients)
+        public Recipe(string nameOfRecipe, string instructions, Category category, List<String> ingridients)
         {
-            this.nameOfIngridient = nameOfIngridient;
+            this.nameOfRecipe = nameOfRecipe;
             this.instructions = instructions;
             this.category = category;
             this.ingridients = ingridients;
+        }
+
+
+        public string NameOfRecipe
+        {
+            get { return nameOfRecipe; }
+            set { nameOfRecipe = value; }
+        }
+
+        public string Instructions
+        {
+            get { return instructions; }
+            set { instructions = value; }
+        }
+
+        public Category Category
+        {
+            get { return category; }
+            set { category = value; }
+        }
+
+        public List<string> Ingridients
+        {
+            get { return ingridients; }
+            set { ingridients = value; }
         }
     }
 

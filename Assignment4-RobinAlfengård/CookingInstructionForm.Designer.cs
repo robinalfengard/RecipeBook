@@ -34,7 +34,7 @@
         {
             IngridientsLabelForm3 = new Label();
             IngridientsListerLabelForm3 = new Label();
-            CookingInstructionLabelForm3 = new Label();
+            CookingInstructionLabel = new Label();
             OkCookingInstructionButton = new Button();
             SuspendLayout();
             // 
@@ -55,12 +55,14 @@
             IngridientsListerLabelForm3.Size = new Size(0, 25);
             IngridientsListerLabelForm3.TabIndex = 4;
             // 
-            // CookingInstructionLabelForm3
+            // CookingInstructionLabel
             // 
-            CookingInstructionLabelForm3.Location = new Point(25, 116);
-            CookingInstructionLabelForm3.Name = "CookingInstructionLabelForm3";
-            CookingInstructionLabelForm3.Size = new Size(739, 648);
-            CookingInstructionLabelForm3.TabIndex = 6;
+            CookingInstructionLabel.BackColor = SystemColors.ButtonHighlight;
+            CookingInstructionLabel.BorderStyle = BorderStyle.FixedSingle;
+            CookingInstructionLabel.Location = new Point(25, 116);
+            CookingInstructionLabel.Name = "CookingInstructionLabel";
+            CookingInstructionLabel.Size = new Size(739, 648);
+            CookingInstructionLabel.TabIndex = 6;
             // 
             // OkCookingInstructionButton
             // 
@@ -71,6 +73,7 @@
             OkCookingInstructionButton.TabIndex = 9;
             OkCookingInstructionButton.Text = "OK";
             OkCookingInstructionButton.UseVisualStyleBackColor = false;
+            OkCookingInstructionButton.Click += OkButtonClick;
             // 
             // CookingInstructionForm
             // 
@@ -78,13 +81,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(796, 885);
             Controls.Add(OkCookingInstructionButton);
-            Controls.Add(CookingInstructionLabelForm3);
+            Controls.Add(CookingInstructionLabel);
             Controls.Add(IngridientsListerLabelForm3);
             Controls.Add(IngridientsLabelForm3);
             Name = "CookingInstructionForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cooking Instructions";
-            Load += this.CookingInstructionForm_Load;
+            Load += CookingInstructionForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -93,7 +96,7 @@
 
         private Label IngridientsLabelForm3;
         private Label IngridientsListerLabelForm3;
-        private Label CookingInstructionLabelForm3;
+        private Label CookingInstructionLabel;
         private Button OkCookingInstructionButton;
     }
 }

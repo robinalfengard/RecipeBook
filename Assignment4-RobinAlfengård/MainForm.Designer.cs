@@ -40,14 +40,14 @@
             CategoryLabel = new Label();
             NameOfRecipeInput = new TextBox();
             NameOfRecipeLabel = new Label();
-            ListOfRecipies = new ListView();
-            LabelNameOfRecipe = new Label();
-            label2 = new Label();
-            NoIngridientsLabel = new Label();
+            ListOfRecipieNames = new ListView();
             EditBeginButton = new Button();
             EditFinishButton = new Button();
             DeleteButton = new Button();
             ClearSelectionButton = new Button();
+            NameOfRecipe = new Label();
+            label2 = new Label();
+            label3 = new Label();
             LeftBigBox.SuspendLayout();
             SuspendLayout();
             // 
@@ -143,40 +143,16 @@
             NameOfRecipeLabel.TabIndex = 0;
             NameOfRecipeLabel.Text = "Name of Recipe";
             // 
-            // ListOfRecipies
+            // ListOfRecipieNames
             // 
-            ListOfRecipies.Location = new Point(678, 121);
-            ListOfRecipies.Name = "ListOfRecipies";
-            ListOfRecipies.Size = new Size(750, 595);
-            ListOfRecipies.TabIndex = 1;
-            ListOfRecipies.UseCompatibleStateImageBehavior = false;
-            // 
-            // LabelNameOfRecipe
-            // 
-            LabelNameOfRecipe.AutoSize = true;
-            LabelNameOfRecipe.Location = new Point(678, 76);
-            LabelNameOfRecipe.Name = "LabelNameOfRecipe";
-            LabelNameOfRecipe.Size = new Size(137, 25);
-            LabelNameOfRecipe.TabIndex = 7;
-            LabelNameOfRecipe.Text = "Name of Recipe";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(996, 76);
-            label2.Name = "label2";
-            label2.Size = new Size(84, 25);
-            label2.TabIndex = 8;
-            label2.Text = "Category";
-            // 
-            // NoIngridientsLabel
-            // 
-            NoIngridientsLabel.AutoSize = true;
-            NoIngridientsLabel.Location = new Point(1280, 76);
-            NoIngridientsLabel.Name = "NoIngridientsLabel";
-            NoIngridientsLabel.Size = new Size(147, 25);
-            NoIngridientsLabel.TabIndex = 9;
-            NoIngridientsLabel.Text = "No of Ingridients";
+            ListOfRecipieNames.Alignment = ListViewAlignment.Default;
+            ListOfRecipieNames.Location = new Point(678, 121);
+            ListOfRecipieNames.Name = "ListOfRecipieNames";
+            ListOfRecipieNames.Size = new Size(750, 595);
+            ListOfRecipieNames.TabIndex = 1;
+            ListOfRecipieNames.UseCompatibleStateImageBehavior = false;
+            ListOfRecipieNames.View = View.List;
+            ListOfRecipieNames.MouseDoubleClick += ShowInstructions;
             // 
             // EditBeginButton
             // 
@@ -187,6 +163,7 @@
             EditBeginButton.TabIndex = 7;
             EditBeginButton.Text = "Edit-Begin";
             EditBeginButton.UseVisualStyleBackColor = false;
+            EditBeginButton.Click += StartEditingRecipeClick;
             // 
             // EditFinishButton
             // 
@@ -197,6 +174,7 @@
             EditFinishButton.TabIndex = 10;
             EditFinishButton.Text = "Edit-Finish";
             EditFinishButton.UseVisualStyleBackColor = false;
+            EditFinishButton.Click += FinishEditRecipeClick;
             // 
             // DeleteButton
             // 
@@ -205,8 +183,9 @@
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(167, 34);
             DeleteButton.TabIndex = 11;
-            DeleteButton.Text = "Delete Button";
+            DeleteButton.Text = "Delete";
             DeleteButton.UseVisualStyleBackColor = false;
+            DeleteButton.Click += DeleteSelectedRecipe;
             // 
             // ClearSelectionButton
             // 
@@ -217,20 +196,48 @@
             ClearSelectionButton.TabIndex = 12;
             ClearSelectionButton.Text = "Clear Selection";
             ClearSelectionButton.UseVisualStyleBackColor = false;
+            ClearSelectionButton.Click += ResetClick;
+            // 
+            // NameOfRecipe
+            // 
+            NameOfRecipe.AutoSize = true;
+            NameOfRecipe.Location = new Point(678, 82);
+            NameOfRecipe.Name = "NameOfRecipe";
+            NameOfRecipe.Size = new Size(137, 25);
+            NameOfRecipe.TabIndex = 8;
+            NameOfRecipe.Text = "Name of Recipe";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(995, 82);
+            label2.Name = "label2";
+            label2.Size = new Size(84, 25);
+            label2.TabIndex = 13;
+            label2.Text = "Category";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(1278, 82);
+            label3.Name = "label3";
+            label3.Size = new Size(150, 25);
+            label3.TabIndex = 14;
+            label3.Text = "No Of Ingridients";
             // 
             // RecipeBookWindow
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1503, 893);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(NameOfRecipe);
             Controls.Add(ClearSelectionButton);
             Controls.Add(DeleteButton);
             Controls.Add(EditFinishButton);
             Controls.Add(EditBeginButton);
-            Controls.Add(NoIngridientsLabel);
-            Controls.Add(label2);
-            Controls.Add(LabelNameOfRecipe);
-            Controls.Add(ListOfRecipies);
+            Controls.Add(ListOfRecipieNames);
             Controls.Add(LeftBigBox);
             Name = "RecipeBookWindow";
             StartPosition = FormStartPosition.CenterScreen;
@@ -252,14 +259,14 @@
         private ComboBox CategorySelection;
         private TextBox InstructionsInput;
         private Button AddRecipeButton;
-        private ListView ListOfRecipies;
-        private Label LabelNameOfRecipe;
-        private Label label2;
-        private Label NoIngridientsLabel;
+        private ListView ListOfRecipieNames;
         private Button EditBeginButton;
         private Button EditFinishButton;
         private Button DeleteButton;
         private Button ClearSelectionButton;
         private Label InstructionsLabel;
+        private Label NameOfRecipe;
+        private Label label2;
+        private Label label3;
     }
 }
