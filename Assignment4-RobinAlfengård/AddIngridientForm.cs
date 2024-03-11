@@ -20,6 +20,7 @@ namespace Assignment4_RobinAlfengård
         {
             InitializeComponent();
             recipe = currentRecipe;
+            this.AcceptButton = addIngridientButton;
             UpdateIngridients();
         }
 
@@ -35,7 +36,7 @@ namespace Assignment4_RobinAlfengård
             if(ValidationCheck())
                 recipe.AddIngridient(ingridientInput.Text);
             UpdateIngridients();
-            
+            ingridientInput.Focus();
         }
 
 
