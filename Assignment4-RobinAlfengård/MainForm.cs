@@ -116,6 +116,8 @@ namespace Assignment4_RobinAlfengård
                 categorySelection.SelectedItem = recipeToEdit.Category;
                 instructionsInput.Text = recipeToEdit.Instructions;
                 Array.Copy(recipeToEdit.Ingridients, currentRecipe.Ingridients, recipeToEdit.Ingridients.Length);
+                editFinishButton.Enabled = true;
+                clearSelectionButton.Enabled = true;
             }
         }
 
@@ -133,6 +135,8 @@ namespace Assignment4_RobinAlfengård
                 recipeToEdit.Instructions = instructionsInput.Text;
                 ShowRecipes();
                 ResetInputFields();
+                editFinishButton.Enabled = false;
+                clearSelectionButton.Enabled = false;
             }
         }
 

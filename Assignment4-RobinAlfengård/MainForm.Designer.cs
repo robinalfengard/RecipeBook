@@ -51,7 +51,7 @@
             leftBigBox.SuspendLayout();
             SuspendLayout();
             // 
-            // LeftBigBox
+            // leftBigBox
             // 
             leftBigBox.Controls.Add(instructionsLabel);
             leftBigBox.Controls.Add(addRecipeButton);
@@ -62,166 +62,168 @@
             leftBigBox.Controls.Add(nameOfRecipeInput);
             leftBigBox.Controls.Add(nameOfRecipeLabel);
             leftBigBox.Location = new Point(32, 40);
-            leftBigBox.Name = "LeftBigBox";
+            leftBigBox.Name = "leftBigBox";
             leftBigBox.Size = new Size(600, 819);
             leftBigBox.TabIndex = 0;
             leftBigBox.TabStop = false;
             leftBigBox.Text = "Add New Recipe";
             // 
-            // InstructionsLabel
+            // instructionsLabel
             // 
             instructionsLabel.AutoSize = true;
             instructionsLabel.Location = new Point(33, 174);
-            instructionsLabel.Name = "InstructionsLabel";
+            instructionsLabel.Name = "instructionsLabel";
             instructionsLabel.Size = new Size(104, 25);
             instructionsLabel.TabIndex = 7;
             instructionsLabel.Text = "Instructions";
             // 
-            // AddRecipeButton
+            // addRecipeButton
             // 
             addRecipeButton.BackColor = SystemColors.ControlLight;
             addRecipeButton.Location = new Point(132, 723);
-            addRecipeButton.Name = "AddRecipeButton";
+            addRecipeButton.Name = "addRecipeButton";
             addRecipeButton.Size = new Size(303, 57);
             addRecipeButton.TabIndex = 6;
             addRecipeButton.Text = "Add Recipe";
             addRecipeButton.UseVisualStyleBackColor = false;
             addRecipeButton.Click += AddRecipeOnClick;
             // 
-            // InstructionsInput
+            // instructionsInput
             // 
             instructionsInput.BorderStyle = BorderStyle.FixedSingle;
             instructionsInput.Location = new Point(33, 202);
             instructionsInput.Multiline = true;
-            instructionsInput.Name = "InstructionsInput";
+            instructionsInput.Name = "instructionsInput";
             instructionsInput.Size = new Size(519, 474);
             instructionsInput.TabIndex = 5;
             // 
-            // AddIngridientButton
+            // addIngridientButton
             // 
             addIngridientButton.BackColor = SystemColors.ControlLight;
             addIngridientButton.Location = new Point(385, 122);
-            addIngridientButton.Name = "AddIngridientButton";
+            addIngridientButton.Name = "addIngridientButton";
             addIngridientButton.Size = new Size(167, 34);
             addIngridientButton.TabIndex = 4;
             addIngridientButton.Text = "Add Ingridients";
             addIngridientButton.UseVisualStyleBackColor = false;
             addIngridientButton.Click += AddIngridientsClick;
             // 
-            // CategorySelection
+            // categorySelection
             // 
             categorySelection.DropDownStyle = ComboBoxStyle.DropDownList;
             categorySelection.FormattingEnabled = true;
             categorySelection.Location = new Point(192, 123);
-            categorySelection.Name = "CategorySelection";
+            categorySelection.Name = "categorySelection";
             categorySelection.Size = new Size(155, 33);
             categorySelection.TabIndex = 3;
             // 
-            // CategoryLabel
+            // categoryLabel
             // 
             categoryLabel.AutoSize = true;
             categoryLabel.Location = new Point(6, 126);
-            categoryLabel.Name = "CategoryLabel";
+            categoryLabel.Name = "categoryLabel";
             categoryLabel.Size = new Size(84, 25);
             categoryLabel.TabIndex = 2;
             categoryLabel.Text = "Category";
             // 
-            // NameOfRecipeInput
+            // nameOfRecipeInput
             // 
             nameOfRecipeInput.BorderStyle = BorderStyle.FixedSingle;
             nameOfRecipeInput.Location = new Point(192, 52);
-            nameOfRecipeInput.Name = "NameOfRecipeInput";
+            nameOfRecipeInput.Name = "nameOfRecipeInput";
             nameOfRecipeInput.Size = new Size(360, 31);
             nameOfRecipeInput.TabIndex = 1;
             // 
-            // NameOfRecipeLabel
+            // nameOfRecipeLabel
             // 
             nameOfRecipeLabel.AutoSize = true;
             nameOfRecipeLabel.Location = new Point(6, 52);
-            nameOfRecipeLabel.Name = "NameOfRecipeLabel";
+            nameOfRecipeLabel.Name = "nameOfRecipeLabel";
             nameOfRecipeLabel.Size = new Size(137, 25);
             nameOfRecipeLabel.TabIndex = 0;
             nameOfRecipeLabel.Text = "Name of Recipe";
             // 
-            // ListOfRecipieNames
+            // listOfRecipieNames
             // 
             listOfRecipieNames.Alignment = ListViewAlignment.Default;
             listOfRecipieNames.Font = new Font("Courier New", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listOfRecipieNames.Location = new Point(678, 121);
-            listOfRecipieNames.Name = "ListOfRecipieNames";
+            listOfRecipieNames.Name = "listOfRecipieNames";
             listOfRecipieNames.Size = new Size(750, 595);
             listOfRecipieNames.TabIndex = 1;
             listOfRecipieNames.UseCompatibleStateImageBehavior = false;
             listOfRecipieNames.View = View.List;
             listOfRecipieNames.MouseDoubleClick += ShowInstructions;
             // 
-            // EditBeginButton
+            // editBeginButton
             // 
             editBeginButton.BackColor = SystemColors.ControlLight;
             editBeginButton.Location = new Point(678, 747);
-            editBeginButton.Name = "EditBeginButton";
+            editBeginButton.Name = "editBeginButton";
             editBeginButton.Size = new Size(167, 34);
             editBeginButton.TabIndex = 7;
-            editBeginButton.Text = "Edit-Begin";
+            editBeginButton.Text = "Edit Recipe";
             editBeginButton.UseVisualStyleBackColor = false;
             editBeginButton.Click += StartEditingRecipeClick;
             // 
-            // EditFinishButton
+            // editFinishButton
             // 
             editFinishButton.BackColor = SystemColors.ControlLight;
+            editFinishButton.Enabled = false;
             editFinishButton.Location = new Point(874, 747);
-            editFinishButton.Name = "EditFinishButton";
+            editFinishButton.Name = "editFinishButton";
             editFinishButton.Size = new Size(167, 34);
             editFinishButton.TabIndex = 10;
-            editFinishButton.Text = "Edit-Finish";
+            editFinishButton.Text = "Save";
             editFinishButton.UseVisualStyleBackColor = false;
             editFinishButton.Click += FinishEditRecipeClick;
             // 
-            // DeleteButton
+            // deleteButton
             // 
             deleteButton.BackColor = SystemColors.ControlLight;
             deleteButton.Location = new Point(1069, 747);
-            deleteButton.Name = "DeleteButton";
+            deleteButton.Name = "deleteButton";
             deleteButton.Size = new Size(167, 34);
             deleteButton.TabIndex = 11;
             deleteButton.Text = "Delete";
             deleteButton.UseVisualStyleBackColor = false;
             deleteButton.Click += DeleteSelectedRecipe;
             // 
-            // ClearSelectionButton
+            // clearSelectionButton
             // 
             clearSelectionButton.BackColor = SystemColors.ControlLight;
+            clearSelectionButton.Enabled = false;
             clearSelectionButton.Location = new Point(1261, 747);
-            clearSelectionButton.Name = "ClearSelectionButton";
+            clearSelectionButton.Name = "clearSelectionButton";
             clearSelectionButton.Size = new Size(167, 34);
             clearSelectionButton.TabIndex = 12;
-            clearSelectionButton.Text = "Clear Selection";
+            clearSelectionButton.Text = "Cancel Edit";
             clearSelectionButton.UseVisualStyleBackColor = false;
             clearSelectionButton.Click += ResetClick;
             // 
-            // NameOfRecipe
+            // nameOfRecipeOverRecipePresenter
             // 
             nameOfRecipeOverRecipePresenter.AutoSize = true;
             nameOfRecipeOverRecipePresenter.Location = new Point(678, 82);
-            nameOfRecipeOverRecipePresenter.Name = "NameOfRecipe";
+            nameOfRecipeOverRecipePresenter.Name = "nameOfRecipeOverRecipePresenter";
             nameOfRecipeOverRecipePresenter.Size = new Size(137, 25);
             nameOfRecipeOverRecipePresenter.TabIndex = 8;
             nameOfRecipeOverRecipePresenter.Text = "Name of Recipe";
             // 
-            // label2
+            // categoryLabelOverRecipePresenter
             // 
             categoryLabelOverRecipePresenter.AutoSize = true;
             categoryLabelOverRecipePresenter.Location = new Point(995, 82);
-            categoryLabelOverRecipePresenter.Name = "label2";
+            categoryLabelOverRecipePresenter.Name = "categoryLabelOverRecipePresenter";
             categoryLabelOverRecipePresenter.Size = new Size(84, 25);
             categoryLabelOverRecipePresenter.TabIndex = 13;
             categoryLabelOverRecipePresenter.Text = "Category";
             // 
-            // label3
+            // numberOfIngridientesLabelOverRecipePresenter
             // 
             numberOfIngridientesLabelOverRecipePresenter.AutoSize = true;
             numberOfIngridientesLabelOverRecipePresenter.Location = new Point(1278, 82);
-            numberOfIngridientesLabelOverRecipePresenter.Name = "label3";
+            numberOfIngridientesLabelOverRecipePresenter.Name = "numberOfIngridientesLabelOverRecipePresenter";
             numberOfIngridientesLabelOverRecipePresenter.Size = new Size(150, 25);
             numberOfIngridientesLabelOverRecipePresenter.TabIndex = 14;
             numberOfIngridientesLabelOverRecipePresenter.Text = "No Of Ingridients";
