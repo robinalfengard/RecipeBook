@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,105 +13,119 @@ namespace Assignment4_RobinAlfengård
 {
     public partial class AddIngridientsForm : Form
     {
-        private List<String> ingridientsList;
-        private const int MAX_NUMBER_OF_INGRIDIENTS = 50;
+        
+        private Recipe recipe;
 
-        public AddIngridientsForm(List<String> listOfIngridients)
+        public AddIngridientsForm(Recipe currentRecipe)
         {
             InitializeComponent();
-            ingridientsList = listOfIngridients;
+            recipe = currentRecipe;
             UpdateIngridients();
         }
 
 
         private void AddIngridientsForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
-
+        // Method to add ingridient
         private void AddIngridient(object sender, EventArgs e)
         {   
             if(ValidationCheck())
-                ingridientsList.Add(IngridientInput.Text);
+                recipe.AddIngridient(ingridientInput.Text);
             UpdateIngridients();
-            UpdateNumberOfIngridients();
-            IngridientInput.Text = "";
+            
         }
+
+
+        // Method to update list of ingridients to GUI
         private void UpdateIngridients()
         {
-            ListOfIngridientsForm2.Items.Clear();
-            foreach (string ingridient in ingridientsList)
+
+            listOfIngridientsForm2.Items.Clear();
+            foreach (string ingridient in recipe.Ingridients)
             {
-                ListOfIngridientsForm2.Items.Add(ingridient + "\n");
+                listOfIngridientsForm2.Items.Add(ingridient + "\n");
             }
+            
             UpdateNumberOfIngridients();
-        }
-
-        public List<string> GetIngredientsList()
-        {
-            return ingridientsList;
+            ingridientInput.Text = "";
         }
 
 
+
+
+        // Method to update ingridient
         private void EditIngridient(object sender, EventArgs e)
         {
-            string ingridientToEdit = ListOfIngridientsForm2.SelectedItems[0].Text.Trim();
-            int indexOfIngridientToBeEdited = ingridientsList.FindIndex(ingridient => ingridient.Equals(ingridientToEdit));
-
-
-            if (indexOfIngridientToBeEdited != -1)
+            if(listOfIngridientsForm2.SelectedItems.Count>0)
             {
-                ingridientsList[indexOfIngridientToBeEdited] = IngridientInput.Text;
+                string ingridientToEdit = listOfIngridientsForm2.SelectedItems[0].Text.Trim();
                 if(ValidationCheck())
+                {
+                    recipe.EditIngridient(ingridientToEdit, ingridientInput.Text);
                     UpdateIngridients();
-                IngridientInput.Text = "";
+                    ingridientInput.Text = "";
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No Ingridient To Edit");
             }
 
         }
 
+
+        // Method to delete ingridient 
         private void DeleteIngridient(object sender, EventArgs e)
         {
-            if (ListOfIngridientsForm2.SelectedItems.Count > 0)
+            if (listOfIngridientsForm2.SelectedItems.Count > 0)
             {
-                string ingridientToDelete = ListOfIngridientsForm2.SelectedItems[0].Text.Trim();
-                int indexOfIngridientToBeDeleted = ingridientsList.FindIndex(ingridient => ingridient.Equals(ingridientToDelete));
-
-                if (indexOfIngridientToBeDeleted != -1)
-                {
-                    ingridientsList.RemoveAt(indexOfIngridientToBeDeleted);
-                    UpdateIngridients();
-                }
+                string ingridientToDelete = listOfIngridientsForm2.SelectedItems[0].Text.Trim();
+                recipe.DeleteIngridient(ingridientToDelete);
+                UpdateIngridients();
             }
+            else
+            {
+                MessageBox.Show("No Ingridient To Delete");
+            }
+
         }
 
+        // Method to update number of ingridients to GUI 
         private void UpdateNumberOfIngridients()
         {
-            IngridientCounterLabel.Text = ingridientsList.Count.ToString();
+            ingridientCounterLabel.Text = recipe.FindAmountOfIngridients().ToString();
         }
 
 
+        // Method to cancel and delete all listed ingridients
         private void CancelIngridientListing(object sender, EventArgs e)
         {
-            ingridientsList.Clear();
+            ClearIngridientList();
             UpdateIngridients();
-
         }
 
+        // Validation to check if ingridient input is empty 
         private Boolean ValidationCheck()
         {
-            if (IngridientInput.Text.Length == 0)
+            if (ingridientInput.Text.Length == 0)
             {
                 MessageBox.Show("Ingridient name can't be empty");
                 return false;
             }
-            if(ingridientsList.Count == MAX_NUMBER_OF_INGRIDIENTS)
-            {
-                MessageBox.Show("Max number of ingridients exceeded, consider removing some");
-                return false;
-            }
-
             return true;
+        }
+
+        // Helper method to clear all ingridients from list 
+        private void ClearIngridientList()
+        {
+            for (int i = 0; i < recipe.Ingridients.Length; i++)
+            {
+                recipe.Ingridients[i] = null;
+            }
         }
 
         private void AcceptIngridientListing(object sender, EventArgs e)

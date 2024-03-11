@@ -28,154 +28,154 @@
         /// </summary>
         private void InitializeComponent()
         {
-            IngridientsBoxForm2 = new GroupBox();
-            EditIngridientButton = new Button();
-            DeleteIngridientButton = new Button();
-            AddIngridientButton = new Button();
-            ListOfIngridientsForm2 = new ListView();
-            IngridientInput = new TextBox();
-            NumberOfIngridientsLabel = new Label();
-            IngridientCounterLabel = new Label();
-            OkButton = new Button();
-            CancelButton = new Button();
-            IngridientsBoxForm2.SuspendLayout();
+            ingridientsBoxForm2 = new GroupBox();
+            editIngridientButton = new Button();
+            deleteIngridientButton = new Button();
+            addIngridientButton = new Button();
+            listOfIngridientsForm2 = new ListView();
+            ingridientInput = new TextBox();
+            numberOfIngridientsLabel = new Label();
+            ingridientCounterLabel = new Label();
+            okButton = new Button();
+            cancelButton = new Button();
+            ingridientsBoxForm2.SuspendLayout();
             SuspendLayout();
             // 
             // IngridientsBoxForm2
             // 
-            IngridientsBoxForm2.Controls.Add(EditIngridientButton);
-            IngridientsBoxForm2.Controls.Add(DeleteIngridientButton);
-            IngridientsBoxForm2.Controls.Add(AddIngridientButton);
-            IngridientsBoxForm2.Controls.Add(ListOfIngridientsForm2);
-            IngridientsBoxForm2.Controls.Add(IngridientInput);
-            IngridientsBoxForm2.Location = new Point(29, 94);
-            IngridientsBoxForm2.Name = "IngridientsBoxForm2";
-            IngridientsBoxForm2.Size = new Size(753, 662);
-            IngridientsBoxForm2.TabIndex = 0;
-            IngridientsBoxForm2.TabStop = false;
-            IngridientsBoxForm2.Text = "Ingridient";
+            ingridientsBoxForm2.Controls.Add(editIngridientButton);
+            ingridientsBoxForm2.Controls.Add(deleteIngridientButton);
+            ingridientsBoxForm2.Controls.Add(addIngridientButton);
+            ingridientsBoxForm2.Controls.Add(listOfIngridientsForm2);
+            ingridientsBoxForm2.Controls.Add(ingridientInput);
+            ingridientsBoxForm2.Location = new Point(29, 94);
+            ingridientsBoxForm2.Name = "IngridientsBoxForm2";
+            ingridientsBoxForm2.Size = new Size(753, 662);
+            ingridientsBoxForm2.TabIndex = 0;
+            ingridientsBoxForm2.TabStop = false;
+            ingridientsBoxForm2.Text = "Ingridient";
             // 
             // EditIngridientButton
             // 
-            EditIngridientButton.BackColor = SystemColors.ControlLight;
-            EditIngridientButton.Location = new Point(570, 148);
-            EditIngridientButton.Name = "EditIngridientButton";
-            EditIngridientButton.Size = new Size(167, 34);
-            EditIngridientButton.TabIndex = 10;
-            EditIngridientButton.Text = "Edit";
-            EditIngridientButton.UseVisualStyleBackColor = false;
-            EditIngridientButton.Click += EditIngridient;
+            editIngridientButton.BackColor = SystemColors.ControlLight;
+            editIngridientButton.Location = new Point(570, 148);
+            editIngridientButton.Name = "EditIngridientButton";
+            editIngridientButton.Size = new Size(167, 34);
+            editIngridientButton.TabIndex = 10;
+            editIngridientButton.Text = "Edit";
+            editIngridientButton.UseVisualStyleBackColor = false;
+            editIngridientButton.Click += EditIngridient;
             // 
             // DeleteIngridientButton
             // 
-            DeleteIngridientButton.BackColor = SystemColors.ControlLight;
-            DeleteIngridientButton.Location = new Point(570, 204);
-            DeleteIngridientButton.Name = "DeleteIngridientButton";
-            DeleteIngridientButton.Size = new Size(167, 34);
-            DeleteIngridientButton.TabIndex = 9;
-            DeleteIngridientButton.Text = "Delete";
-            DeleteIngridientButton.UseVisualStyleBackColor = false;
-            DeleteIngridientButton.Click += DeleteIngridient;
+            deleteIngridientButton.BackColor = SystemColors.ControlLight;
+            deleteIngridientButton.Location = new Point(570, 204);
+            deleteIngridientButton.Name = "DeleteIngridientButton";
+            deleteIngridientButton.Size = new Size(167, 34);
+            deleteIngridientButton.TabIndex = 9;
+            deleteIngridientButton.Text = "Delete";
+            deleteIngridientButton.UseVisualStyleBackColor = false;
+            deleteIngridientButton.Click += DeleteIngridient;
             // 
             // AddIngridientButton
             // 
-            AddIngridientButton.BackColor = SystemColors.ControlLight;
-            AddIngridientButton.Location = new Point(570, 91);
-            AddIngridientButton.Name = "AddIngridientButton";
-            AddIngridientButton.Size = new Size(167, 34);
-            AddIngridientButton.TabIndex = 8;
-            AddIngridientButton.Text = "Add";
-            AddIngridientButton.UseVisualStyleBackColor = false;
-            AddIngridientButton.Click += AddIngridient;
+            addIngridientButton.BackColor = SystemColors.ControlLight;
+            addIngridientButton.Location = new Point(570, 91);
+            addIngridientButton.Name = "AddIngridientButton";
+            addIngridientButton.Size = new Size(167, 34);
+            addIngridientButton.TabIndex = 8;
+            addIngridientButton.Text = "Add";
+            addIngridientButton.UseVisualStyleBackColor = false;
+            addIngridientButton.Click += AddIngridient;
             // 
             // ListOfIngridientsForm2
             // 
-            ListOfIngridientsForm2.Location = new Point(17, 91);
-            ListOfIngridientsForm2.MultiSelect = false;
-            ListOfIngridientsForm2.Name = "ListOfIngridientsForm2";
-            ListOfIngridientsForm2.Size = new Size(547, 529);
-            ListOfIngridientsForm2.TabIndex = 2;
-            ListOfIngridientsForm2.UseCompatibleStateImageBehavior = false;
-            ListOfIngridientsForm2.View = View.List;
+            listOfIngridientsForm2.Location = new Point(17, 91);
+            listOfIngridientsForm2.MultiSelect = false;
+            listOfIngridientsForm2.Name = "ListOfIngridientsForm2";
+            listOfIngridientsForm2.Size = new Size(547, 529);
+            listOfIngridientsForm2.TabIndex = 2;
+            listOfIngridientsForm2.UseCompatibleStateImageBehavior = false;
+            listOfIngridientsForm2.View = View.List;
             // 
             // IngridientInput
             // 
-            IngridientInput.BorderStyle = BorderStyle.FixedSingle;
-            IngridientInput.Location = new Point(17, 39);
-            IngridientInput.Name = "IngridientInput";
-            IngridientInput.Size = new Size(547, 31);
-            IngridientInput.TabIndex = 0;
+            ingridientInput.BorderStyle = BorderStyle.FixedSingle;
+            ingridientInput.Location = new Point(17, 39);
+            ingridientInput.Name = "IngridientInput";
+            ingridientInput.Size = new Size(547, 31);
+            ingridientInput.TabIndex = 0;
             // 
             // NumberOfIngridientsLabel
             // 
-            NumberOfIngridientsLabel.AutoSize = true;
-            NumberOfIngridientsLabel.Location = new Point(29, 36);
-            NumberOfIngridientsLabel.Name = "NumberOfIngridientsLabel";
-            NumberOfIngridientsLabel.Size = new Size(188, 25);
-            NumberOfIngridientsLabel.TabIndex = 1;
-            NumberOfIngridientsLabel.Text = "Number of Ingridients";
+            numberOfIngridientsLabel.AutoSize = true;
+            numberOfIngridientsLabel.Location = new Point(29, 36);
+            numberOfIngridientsLabel.Name = "NumberOfIngridientsLabel";
+            numberOfIngridientsLabel.Size = new Size(188, 25);
+            numberOfIngridientsLabel.TabIndex = 1;
+            numberOfIngridientsLabel.Text = "Number of Ingridients";
             // 
             // IngridientCounterLabel
             // 
-            IngridientCounterLabel.AutoSize = true;
-            IngridientCounterLabel.Location = new Point(239, 36);
-            IngridientCounterLabel.Name = "IngridientCounterLabel";
-            IngridientCounterLabel.Size = new Size(0, 25);
-            IngridientCounterLabel.TabIndex = 2;
+            ingridientCounterLabel.AutoSize = true;
+            ingridientCounterLabel.Location = new Point(239, 36);
+            ingridientCounterLabel.Name = "IngridientCounterLabel";
+            ingridientCounterLabel.Size = new Size(0, 25);
+            ingridientCounterLabel.TabIndex = 2;
             // 
             // OkButton
             // 
-            OkButton.BackColor = SystemColors.ControlLight;
-            OkButton.Location = new Point(82, 762);
-            OkButton.Name = "OkButton";
-            OkButton.Size = new Size(167, 34);
-            OkButton.TabIndex = 11;
-            OkButton.Text = "OK";
-            OkButton.UseVisualStyleBackColor = false;
-            OkButton.Click += AcceptIngridientListing;
+            okButton.BackColor = SystemColors.ControlLight;
+            okButton.Location = new Point(82, 762);
+            okButton.Name = "OkButton";
+            okButton.Size = new Size(167, 34);
+            okButton.TabIndex = 11;
+            okButton.Text = "OK";
+            okButton.UseVisualStyleBackColor = false;
+            okButton.Click += AcceptIngridientListing;
             // 
             // CancelButton
             // 
-            CancelButton.BackColor = SystemColors.ControlLight;
-            CancelButton.Location = new Point(397, 762);
-            CancelButton.Name = "CancelButton";
-            CancelButton.Size = new Size(167, 34);
-            CancelButton.TabIndex = 11;
-            CancelButton.Text = "Cancel";
-            CancelButton.UseVisualStyleBackColor = false;
-            CancelButton.Click += CancelIngridientListing;
+            cancelButton.BackColor = SystemColors.ControlLight;
+            cancelButton.Location = new Point(397, 762);
+            cancelButton.Name = "CancelButton";
+            cancelButton.Size = new Size(167, 34);
+            cancelButton.TabIndex = 11;
+            cancelButton.Text = "Cancel";
+            cancelButton.UseVisualStyleBackColor = false;
+            cancelButton.Click += CancelIngridientListing;
             // 
             // AddIngridientsForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(824, 838);
-            Controls.Add(CancelButton);
-            Controls.Add(OkButton);
-            Controls.Add(IngridientCounterLabel);
-            Controls.Add(NumberOfIngridientsLabel);
-            Controls.Add(IngridientsBoxForm2);
+            Controls.Add(cancelButton);
+            Controls.Add(okButton);
+            Controls.Add(ingridientCounterLabel);
+            Controls.Add(numberOfIngridientsLabel);
+            Controls.Add(ingridientsBoxForm2);
             Name = "AddIngridientsForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Add Ingridients";
             Load += AddIngridientsForm_Load;
-            IngridientsBoxForm2.ResumeLayout(false);
-            IngridientsBoxForm2.PerformLayout();
+            ingridientsBoxForm2.ResumeLayout(false);
+            ingridientsBoxForm2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private GroupBox IngridientsBoxForm2;
-        private TextBox IngridientInput;
-        private ListView ListOfIngridientsForm2;
-        private Button EditIngridientButton;
-        private Button DeleteIngridientButton;
-        private Button AddIngridientButton;
-        private Label NumberOfIngridientsLabel;
-        private Label IngridientCounterLabel;
-        private Button OkButton;
-        private Button CancelButton;
+        private GroupBox ingridientsBoxForm2;
+        private TextBox ingridientInput;
+        private ListView listOfIngridientsForm2;
+        private Button editIngridientButton;
+        private Button deleteIngridientButton;
+        private Button addIngridientButton;
+        private Label numberOfIngridientsLabel;
+        private Label ingridientCounterLabel;
+        private Button okButton;
+        private Button cancelButton;
     }
 }
