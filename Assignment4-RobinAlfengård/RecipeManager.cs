@@ -17,6 +17,7 @@ namespace Assignment4_RobinAlfengård
             listOfRecipes = new Recipe[maxNumOfElements];
         }
 
+        // Method to add recipe 
         public bool Add(Recipe recipe)
         {
             if (recipe != null)
@@ -28,45 +29,60 @@ namespace Assignment4_RobinAlfengård
             return false;
         }
 
+        // Method to remove recipe
         public void Remove(Recipe recipe) 
         {
-            for(int i = 0; i < listOfRecipes.Length; i++)
+            int indexOfDeletedElement = -1;
+            for (int i = 0; i < GetNumberOfRecipes(); i++)        
             {
                 if (listOfRecipes[i] == recipe)
+                {
                     listOfRecipes[i] = null;
-            }  
-            MoveRecipesToTheLeft();
-            DecreaseNumberOfRecipeArr();
+                    indexOfDeletedElement = i;
+                    MoveRecipesToTheLeft(indexOfDeletedElement);
+                    DecreaseNumberOfRecipeArr();
+                    break;
+                }
+            }
+
+
         }
 
-
+        // Method to increase counter of recipes
         public void IncreaseNumberOfRecipeArr()
         {
             numOfElements++;
         }
-
+        // Method to decrease counter of recipes
         public void DecreaseNumberOfRecipeArr()
         {
             numOfElements--;
         }
 
-        public void MoveRecipesToTheLeft()
+        // Method to move recipes to left
+        public void MoveRecipesToTheLeft(int indexOfLatestDeletedElement)
         {
-            for(int i = 1; i < listOfRecipes.Length; i++)
+           if(indexOfLatestDeletedElement != -1)
             {
-                if (listOfRecipes[i-1]  == null)
-                    listOfRecipes[i-1] = listOfRecipes[i];
-            }
+                for(int i = indexOfLatestDeletedElement; i< GetNumberOfRecipes(); i++)
+                {
+                    listOfRecipes[i] = listOfRecipes[i + 1];
+                }
+                listOfRecipes[GetNumberOfRecipes() -1]  = null;
+            }   
         }
 
+        // Method to return number of actual recipes 
         public int GetNumberOfRecipes()
         {
             return numOfElements;
         }
-
+        // Method to return list of recipes 
         public Recipe[] GetListOfRecipes()
         {
-            return listOfRecipes;
+            Recipe[] copyOfListOfRecipes = new Recipe[numOfElements]; 
+            Array.Copy(listOfRecipes, copyOfListOfRecipes, numOfElements);
+            return copyOfListOfRecipes;
         }
     }
 }

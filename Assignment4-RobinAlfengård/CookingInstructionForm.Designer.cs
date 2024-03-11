@@ -24,6 +24,8 @@
             // Your code for form load event handling goes here
         }
 
+        // Does not load like it should
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -32,58 +34,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            IngridientsLabelForm3 = new Label();
-            IngridientsListerLabelForm3 = new Label();
-            CookingInstructionLabel = new Label();
-            OkCookingInstructionButton = new Button();
+            ingridientsLabelForm3 = new Label();
+            ingridientsListerLabelForm3 = new Label();
+            cookingInstructionLabel = new Label();
+            okCookingInstructionButton = new Button();
             SuspendLayout();
             // 
-            // IngridientsLabelForm3
+            // ingridientsLabelForm3
             // 
-            IngridientsLabelForm3.AutoSize = true;
-            IngridientsLabelForm3.Location = new Point(25, 30);
-            IngridientsLabelForm3.Name = "IngridientsLabelForm3";
-            IngridientsLabelForm3.Size = new Size(96, 25);
-            IngridientsLabelForm3.TabIndex = 2;
-            IngridientsLabelForm3.Text = "Ingridients";
+            ingridientsLabelForm3.AutoSize = true;
+            ingridientsLabelForm3.Location = new Point(25, 50);
+            ingridientsLabelForm3.Name = "ingridientsLabelForm3";
+            ingridientsLabelForm3.Size = new Size(100, 25);
+            ingridientsLabelForm3.TabIndex = 2;
+            ingridientsLabelForm3.Text = "Ingridients:";
             // 
-            // IngridientsListerLabelForm3
+            // ingridientsListerLabelForm3
             // 
-            IngridientsListerLabelForm3.AutoSize = true;
-            IngridientsListerLabelForm3.Location = new Point(25, 75);
-            IngridientsListerLabelForm3.Name = "IngridientsListerLabelForm3";
-            IngridientsListerLabelForm3.Size = new Size(0, 25);
-            IngridientsListerLabelForm3.TabIndex = 4;
+            ingridientsListerLabelForm3.AutoSize = true;
+            ingridientsListerLabelForm3.Location = new Point(25, 75);
+            ingridientsListerLabelForm3.Name = "ingridientsListerLabelForm3";
+            ingridientsListerLabelForm3.Size = new Size(0, 25);
+            ingridientsListerLabelForm3.TabIndex = 4;
             // 
-            // CookingInstructionLabel
+            // cookingInstructionLabel
             // 
-            CookingInstructionLabel.BackColor = SystemColors.ButtonHighlight;
-            CookingInstructionLabel.BorderStyle = BorderStyle.FixedSingle;
-            CookingInstructionLabel.Location = new Point(25, 116);
-            CookingInstructionLabel.Name = "CookingInstructionLabel";
-            CookingInstructionLabel.Size = new Size(739, 648);
-            CookingInstructionLabel.TabIndex = 6;
+            cookingInstructionLabel.BackColor = SystemColors.ButtonHighlight;
+            cookingInstructionLabel.BorderStyle = BorderStyle.FixedSingle;
+            cookingInstructionLabel.Location = new Point(25, 116);
+            cookingInstructionLabel.Name = "cookingInstructionLabel";
+            cookingInstructionLabel.Size = new Size(739, 648);
+            cookingInstructionLabel.TabIndex = 6;
+            cookingInstructionLabel.Text = "Instructions:";
             // 
-            // OkCookingInstructionButton
+            // okCookingInstructionButton
             // 
-            OkCookingInstructionButton.BackColor = SystemColors.ControlLight;
-            OkCookingInstructionButton.Location = new Point(314, 812);
-            OkCookingInstructionButton.Name = "OkCookingInstructionButton";
-            OkCookingInstructionButton.Size = new Size(167, 34);
-            OkCookingInstructionButton.TabIndex = 9;
-            OkCookingInstructionButton.Text = "OK";
-            OkCookingInstructionButton.UseVisualStyleBackColor = false;
-            OkCookingInstructionButton.Click += OkButtonClick;
+            okCookingInstructionButton.BackColor = SystemColors.ControlLight;
+            okCookingInstructionButton.Location = new Point(314, 812);
+            okCookingInstructionButton.Name = "okCookingInstructionButton";
+            okCookingInstructionButton.Size = new Size(167, 34);
+            okCookingInstructionButton.TabIndex = 9;
+            okCookingInstructionButton.Text = "OK";
+            okCookingInstructionButton.UseVisualStyleBackColor = false;
+            okCookingInstructionButton.Click += OkButtonClick;
             // 
             // CookingInstructionForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(796, 885);
-            Controls.Add(OkCookingInstructionButton);
-            Controls.Add(CookingInstructionLabel);
-            Controls.Add(IngridientsListerLabelForm3);
-            Controls.Add(IngridientsLabelForm3);
+            Controls.Add(okCookingInstructionButton);
+            Controls.Add(cookingInstructionLabel);
+            Controls.Add(ingridientsListerLabelForm3);
+            Controls.Add(ingridientsLabelForm3);
             Name = "CookingInstructionForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cooking Instructions";
@@ -94,9 +97,9 @@
 
         #endregion
 
-        private Label IngridientsLabelForm3;
-        private Label IngridientsListerLabelForm3;
-        private Label CookingInstructionLabel;
-        private Button OkCookingInstructionButton;
+        private Label ingridientsLabelForm3;
+        private Label ingridientsListerLabelForm3;
+        private Label cookingInstructionLabel;
+        private Button okCookingInstructionButton;
     }
 }
